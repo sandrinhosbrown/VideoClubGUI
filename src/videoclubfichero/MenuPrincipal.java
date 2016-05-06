@@ -33,6 +33,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setTitle("VideoClub");
 
         altaPeliculaButton.setText("Alta Pelicula");
+        altaPeliculaButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                altaPeliculaButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -53,6 +58,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void altaPeliculaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_altaPeliculaButtonActionPerformed
+        AltaPelicula alta = new AltaPelicula(this, true);
+        alta.setVisible(true);
+    }//GEN-LAST:event_altaPeliculaButtonActionPerformed
 
     
 

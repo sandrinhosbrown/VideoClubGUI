@@ -21,7 +21,7 @@ public class VideoClubFichero {
     public static void main(String[] args) {
         //Inicializamos el fichero y la lista de peliculas
         miFichero = new Fichero ("videoclub.xml");
-        misPeliculas = (ListaPeliculas) miFichero.leer(); //casting de objeto q devuelve leer() a ListaPeliculas
+        misPeliculas = (ListaPeliculas) miFichero.leer(); //casting de objeto q devuelve leer a ListaPeliculas
         if(misPeliculas == null){
             misPeliculas = new ListaPeliculas();
         }

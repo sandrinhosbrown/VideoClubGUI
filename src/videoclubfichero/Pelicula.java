@@ -45,12 +45,17 @@ public class Pelicula implements Serializable{
         return true;
     }
 
-    
-    
-    
     //constructor vacio es necesario para la construccion de un JavaBean
+    //Inicializamos para evitar NullPointException
     public Pelicula(){
+        codigo = "";
+        titulo = "";
+        genero = new String(); // "new String()" aqui es lo mismo que ""
+        duracion = 90;
+        visto = true; //o false
+        
     }
+    
     public Pelicula(String codigo, String titulo, int duracion, String genero, int valoracion, boolean visto) {
         this.codigo = codigo;
         this.titulo = titulo;
