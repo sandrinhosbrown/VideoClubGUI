@@ -17,6 +17,36 @@ public class ListaPeliculas {
         lista = new ArrayList<>();
     }
     
+    //Metodo que devuelve una lista de Peliculas con valor > 5
+    public ListaPeliculas pelisAprobadas(){
+        ListaPeliculas aprobadas = new ListaPeliculas();
+        for (Pelicula p : lista){
+        if (p.getValoracion() >= 5){
+            aprobadas.altaPelicula(p);
+        }
+    }
+        return aprobadas;
+    }
+    
+    //Metodo que devuelve el total de peliculas en el VideoClub
+    public int TodasPeliculas(){
+        int total = lista.size();
+        return total;
+    } 
+        
+    //Metodo que devuelve una ListaPeliculas con las peliculas que quedan por ver
+    public ListaPeliculas peliculasPorVer(){
+        ListaPeliculas porVer = new ListaPeliculas();
+        //Recorro la lista pelicula por pelicula y si no se ha visto lo añadimos a porVer
+        //(la ListaPeliculas que vamos a devolver
+        for (Pelicula p : lista){
+        if (!p.isVisto()){
+            porVer.altaPelicula(p);
+        }
+    }
+        return porVer;
+    } //Ara vamos a PeliculasPorVer
+    
     //Metodo para borrar una Pelicula a la lista
     public void borrarPelicula(Pelicula p){
         lista.remove(p);
@@ -34,15 +64,17 @@ public class ListaPeliculas {
     }
     
     //metodo que devuelve cuantas peliculas tiene por ver el usuario
-    public int peliculasPorVer(){
-    int total = 0;
-    for (Pelicula p : lista){
-        if(p.isVisto() == false){ // (!p.isVisto())
-            total++;
-        }
+    public int numeroPeliculasPorVer(){
+        return peliculasPorVer().cantidad(); //optimizamos el codigo de esta manera
     }
-        return total;
-    }
+//    int total = 0;
+//    for (Pelicula p : lista){
+//        if(p.isVisto() == false){ // (!p.isVisto())
+//            total++;
+//        }
+//    }
+//        return total;
+//    }
     
     //Metodo que a partir de un codigo devuelve la pelicula de la lista
     //si no existe, devolvemos un null
