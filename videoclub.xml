@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_80" class="java.beans.XMLDecoder">
+ <object class="videoclubfichero.ListaPeliculas" id="ListaPeliculas0">
+  <void property="lista">
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>1a</string>
+     </void>
+     <void property="duracion">
+      <int>1</int>
+     </void>
+     <void property="genero">
+      <string>Terror</string>
+     </void>
+     <void property="titulo">
+      <string>El hombre que tenia un Windows Phone</string>
+     </void>
+     <void property="valoracion">
+      <int>6</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>2b</string>
+     </void>
+     <void property="duracion">
+      <int>20</int>
+     </void>
+     <void property="genero">
+      <string>risa</string>
+     </void>
+     <void property="titulo">
+      <string>ola</string>
+     </void>
+     <void property="valoracion">
+      <int>9</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>3c</string>
+     </void>
+     <void property="duracion">
+      <int>40</int>
+     </void>
+     <void property="genero">
+      <string>documental</string>
+     </void>
+     <void property="titulo">
+      <string>Android facil</string>
+     </void>
+     <void property="valoracion">
+      <int>5</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>1</string>
+     </void>
+     <void property="duracion">
+      <int>23</int>
+     </void>
+     <void property="genero">
+      <string>fantasia</string>
+     </void>
+     <void property="titulo">
+      <string>Ola</string>
+     </void>
+     <void property="valoracion">
+      <int>4</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>
