@@ -52,7 +52,7 @@ public class Pelicula implements Serializable{
         titulo = "";
         genero = new String(); // "new String()" aqui es lo mismo que ""
         duracion = 90;
-        visto = true; //o false
+//        visto = true; //o false
         
     }
     

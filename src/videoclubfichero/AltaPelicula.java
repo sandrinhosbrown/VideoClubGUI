@@ -32,6 +32,7 @@ public class AltaPelicula extends javax.swing.JDialog {
         super(parent, modal);
         //Aqui iniclializaremos variables antes que empiece a pintar
         nuevaPelicula = new Pelicula();
+        nuevaPelicula.setVisto(true);// ponemos el valor inicial de Visto en true y quitamos del constructor
         initComponents();
         //Aqui pondriamos codigo que tenga que ver con la parte grafica
     }
